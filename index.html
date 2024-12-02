@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Rendering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+
+<body>
+    <!-- Initial content -->
+    <div id="initial-content" class="initial-content">
+        <h2>Hello, there!</h2>
+        <h1>I'm Jeraldine May T. Vizarra</h1>
+        <a href="#" id="show-home">See More</a>
+    </div>
+    
+    <!-- Home section (initially hidden) -->
+    <div id="home-section" style="display: none;">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <a href="#" class="logo">JMV</a>
+            <ul id="navbar-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+              <!-- Hamburger button -->
+    <div id="hamburger" class="hamburger-menu">
+        <i class="fa fa-bars"></i>
+    </div>
+        </nav>
+
+        <!-- Bars animation -->
+        <div class="bars-animation">
+            <div class="bar" style="--i:6;"></div>
+            <div class="bar" style="--i:5;"></div>
+            <div class="bar" style="--i:4;"></div>
+            <div class="bar" style="--i:3;"></div>
+            <div class="bar" style="--i:2;"></div>
+            <div class="bar" style="--i:1;"></div>
+        </div>
+
+<!-- Home section content -->
+<section  id="home" class="home">
+    <div class="home-info">
+        <h1>Jeraldine May Vizarra</h1>
+        <h2>I'm a
+            <span style="--i:4;" data-text="Web Developer">Web Developer</span>
+            <span style="--i:3" data-text="UI Designer">UI Designer</span>
+            <span style="--i:2;" data-text="Frontend Developer">Frontend Developer</span>
+            <span style="--i:1;" data-text="YouTuber">YouTuber</span>
+        </h2>
+        <p>
+            I thrive on turning ideas into visually captivating and user-friendly digital experiences. 
+            With a love for clean, modern designs and a keen eye for detail, I blend creativity with technical 
+            skill to build seamless webpages that users love to interact with.
+        </p>
+        <div class="btn-sci">
+            <a href="#about" id="explore" class="btn">Explore More</a>
+        </div>
+    </div>
+    <div class="home-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="Portfolio/blob.jpg" alt="Image Description">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About section content -->
+<section class="abt" id="about">
+
+    <div class="about-img">
+        <img src="Portfolio/aboutimg.jpg" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+            I'm Jeraldine May Vizarra from Maniwaya, Santa Cruz, Marinduque. With a passion for technology and problem-solving, I specialize in crafting user-centric websites and applications that are both functional and visually appealing. 
+            <span id="more-text" class="hidden">
+                I create responsive web pages using HTML, CSS, and JavaScript. I enjoy working with it to build dynamic, interactive user interfaces. I also explore new tools and frameworks to enhance my skills and keep up with the latest trends in web development.
+            </span>
+        </p>
+        <button id="read-more-btn">
+            <span class="text">Read More</span>
+        </button>
+
+       <div>
+        <a href="#skills" class="abt-btn">
+            <span class="txt">Move to skills</span>
+            <span class="v-btn">&#x25BE;</span>
+        </a>
+       </div>
+    </div>
+    
+</section>
+
+<!-- Skills section content -->
+<section id="skills" class="skills">
+    <div class="main-text">
+        <h2>MY SKILLS</h2>
+    </div>
+
+    <div class="skill-main">
+        <div class="skill-left">
+            <h3>Technical Skills</h3>
+            <div class="skill-bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <p>85%</p>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <p>60%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>JavaScript</p>
+                    <p>50%</p>
+                </div>
+                <div class="bar">
+                    <span class="javascript"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Python</p>
+                    <p>70%</p>
+                </div>
+                <div class="bar">
+                    <span class="python"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-right">
+            <h3>Professional Skills</h3>
+            <div class="professional">
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="90"></div>
+                    <div class="text">
+                        <span class="big">90%</span>
+                        <small>Team Work</small>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="80"></div>
+                    <div class="text">
+                        <span class="big">85%</span>
+                        <small>Creativity</small>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="70"></div>
+                    <div class="text">
+                        <span class="big">70%</span>
+                        <small>Problem-Solving</small>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="circle" data-dots="80" data-percent="90"></div>
+                    <div class="text">
+                        <span class="big">90%</span>
+                        <small>Communication</small>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <a href="#projects" class="v-sign-btn1">
+            <span class="text1">Move to projects</span>
+            <span class="v-sign">&#x25BE;</span>
+        </a>
+</section>
+
+<!-- Project section content -->
+<section class="projects" id="projects">
+    <h2 class="heading">MY <span>PROJECTS</span></h2>
+    
+    <div class="projects-container">
+        <div class="projects-box">
+            <img src="Portfolio/Project1.jpg" alt="">
+            <div class="projects-layer">
+                <h4>Tetris Game</h4>
+                <p>Welcome to the Tetris Game we proudly developed! Designed as a blend of creativity and technical skill, this game represents our unique take on the classic puzzle experience.</p>
+            </div>
+        </div>
+
+        <div class="projects-box">
+            <img src="Portfolio/Project2.png" alt="">
+            <div class="projects-layer">
+                <h4>Self Portfolio</h4>
+                <p>This is my self portfolio that reflects my journey, showcasing the skills, projects, and tools that define my passion for innovation and development.</p>
+                <a href="https://jeraldinemay.github.io/Self-Portfolio.github.io/"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="projects-box">
+            <img src="Portfolio/Project3.png" alt="">
+            <div class="projects-layer">
+                <h4>Maniwaya Island</h4>
+                <p>This website is your go-to destination for discovering the tourist spots in Maniwaya. It showcases the island's unparalleled beauty and majestic caves.</p>
+                <a href="https://jeraldinemay.github.io/ManiwayaIsland.github.io/index.html"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <a href="#contact" class="v-sign-btn2">
+            <span class="text2">Move to contact</span>
+            <span class="v-sign">&#x25BE;</span>
+        </a> 
+    </div>
+</section>
+
+<!-- Contact section content -->
+<section class="contact" id="contact">
+    <div class="container">
+        <h1>CONTACT <span>ME</span></h1>
+        
+        <div class="row">
+            <div class="contact-left">
+                <p><i class="fa-solid fa-paper-plane"></i>jeraldinemaytumulakvizarr@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>09566491768</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/jeraldinemaytumulakvizarra"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/im_mayvizarra/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@jrldnmyvzrr"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://github.com/JeraldineMay"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="https://github.com/JeraldineMay/Self-Portfolio.github.io" download class="btn-btn2">Download Self Portfolio</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn-btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Jeraldine May Vizarra. All Rights Reserved!</p>
+</footer>
+
+
+</body>
+</html>
